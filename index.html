@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌙 芭堤雅完全攻略 2024</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e4e4e4;
+            line-height: 1.8;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(26, 26, 46, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1em;
+        }
+        
+        .warning {
+            background: rgba(255, 87, 34, 0.2);
+            border-left: 4px solid #ff5722;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .search-box {
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 10px;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1em;
+        }
+        
+        .search-box input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 30px 0;
+            justify-content: center;
+        }
+        
+        nav button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s;
+        }
+        
+        nav button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .level-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .level-safe { background: #4caf50; color: white; }
+        .level-medium { background: #ff9800; color: white; }
+        .level-adult { background: #f44336; color: white; }
+        
+        section {
+            margin: 30px 0;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #9b59b6;
+            margin: 20px 0 10px 0;
+            font-size: 1.3em;
+        }
+        
+        .venue {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s;
+        }
+        
+        .venue:hover {
+            background: rgba(102, 126, 234, 0.1);
+            transform: translateX(5px);
+        }
+        
+        .venue-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            color: #4caf50;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        
+        .warning-text {
+            color: #ff5722;
+            font-weight: bold;
+        }
+        
+        .tip {
+            background: rgba(76, 175, 80, 0.2);
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(102, 126, 234, 0.3);
+        }
+        
+        th {
+            background: rgba(102, 126, 234, 0.3);
+            color: white;
+            font-weight: bold;
+        }
+        
+        .collapsible {
+            background: rgba(102, 126, 234, 0.2);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1em;
+            border-radius: 10px;
+            margin: 10px 0;
+            transition: 0.3s;
+        }
+        
+        .collapsible:hover {
+            background: rgba(102, 126, 234, 0.4);
+        }
+        
+        .collapsible:after {
+            content: '▼';
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .collapsible.active:after {
+            content: '▲';
+        }
+        
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 10px 10px;
+        }
+        
+        .content.active {
+            padding: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            border-top: 2px solid rgba(102, 126, 234, 0.3);
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            .container { padding: 15px; }
+            section { padding: 15px; }
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .highlight {
+            background: rgba(255, 235, 59, 0.2);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌙 芭堤雅完全攻略</h1>
+            <p class="subtitle">食衣住行 · 吃喝玩樂 · 完整指南 2024</p>
+        </header>
+        
+        <div class="warning">
+            <strong>⚠️ 內容聲明：</strong>本攻略包含成人內容，僅供成年人參考。請遵守當地法律法規，尊重他人，注意安全。
+        </div>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="🔍 搜尋店家、地點、關鍵字..." onkeyup="searchContent()">
+        </div>
+        
+        <nav>
+            <button onclick="scrollToSection('transport')">🚗 交通</button>
+            <button onclick="scrollToSection('hotel')">🏨 住宿</button>
+            <button onclick="scrollToSection('food')">🍜 美食</button>
+            <button onclick="scrollToSection('date')">☕ 約會</button>
+            <button onclick="scrollToSection('beer')">🍺 啤酒吧</button>
+            <button onclick="scrollToSection('gogo')">💃 GoGo Bar</button>
+            <button onclick="scrollToSection('club')">🎉 夜店</button>
+            <button onclick="scrollToSection('massage')">💆 按摩</button>
+            <button onclick="scrollToSection('bath')">🛁 泰浴</button>
+            <button onclick="scrollToSection('ktv')">🎤 KTV</button>
+            <button onclick="scrollToSection('pickup')">🌹 打野技巧</button>
+            <button onclick="scrollToSection('terms')">📖 術語</button>
+        </nav>
+        
+        <!-- 交通 -->
+        <section id="transport">
+            <h2>🚗 交通資訊 <span class="level-badge level-safe">🟢 一般</span></h2>
+            
+            <div class="venue">
+                <div class="venue-name">雙條車（Songthaew）</div>
+                <p class="price">💰 10 泰銖 / 趟</p>
+                <p>芭堤雅主要活動區域內隨攔隨停，紅色框區域內統一價格。最經濟實惠的交通方式。</p>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">BOLT APP</div>
+                <p class="price">💰 依距離計費</p>
+                <p>叫摩托車或計程車的最佳 APP，非常經濟實惠，推薦下載使用。</p>
+            </div>
+        </section>
+        
+        <!-- 住宿 -->
+        <section id="hotel">
+            <h2>🏨 住宿推薦 <span class="level-badge level-safe">🟢 一般</span></h2>
+            
+            <div class="venue">
+                <div class="venue-name">VISTA</div>
+                <p class="price">💰 約 1500 泰銖/晚 ⭐⭐⭐⭐</p>
+                <p><strong>位置：</strong>Pattaya Soi 4</p>
+                <p><strong>優點：</strong>走路可到 Soi 6，住起來舒適，四星飯店</p>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">Siam</div>
+                <p class="price">💰 約 2500 泰銖/晚 ⭐⭐⭐⭐</p>
+                <p><strong>位置：</strong>近哈尼和好好大浴室</p>
+                <p><strong>優點：</strong>緊鄰哈尼和好好大浴室，對面晚上有小夜市，離 CHINA TOWN 和 21航廈百貨都不遠</p>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">The Grass</div>
+                <p class="price">💰 約 1000 泰銖/晚</p>
+                <p><strong>位置：</strong>對面是168土嗨吧</p>
+                <p><strong>優點：</strong>1000泰銖飯店的天花板，房間很大很舒適，經濟實惠</p>
+                <p><strong>缺點：</strong>隔音比較差</p>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">Shambhala</div>
+                <p class="price">💰 約 1500 泰銖/晚</p>
+                <p><strong>位置：</strong>J SPA 對面</p>
+                <p><strong>優點：</strong>房間舒適乾淨，可以隨時去 J SPA 串門子泡茶</p>
+            </div>
+        </section>
+        
+        <!-- 美食 -->
+        <section id="food">
+            <h2>🍜 餐廳美食 <span class="level-badge level-safe">🟢 一般</span></h2>
+            
+            <button class="collapsible">🏢 百貨公司美食街</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">21 航站樓（T21）</div>
+                    <p class="price">💰 200 泰銖以內吃很飽</p>
+                    <p>最頂樓美食街物美價廉，基本上不到 200 泰銖就可以吃得很飽。</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">Central Pattaya</div>
+                    <p>中心百貨，餐廳非常多，裡面也有海底撈，前後都有小夜市。</p>
+                </div>
+            </div>
+            
+            <button class="collapsible">🇨🇳 中餐推薦</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">上海菜</div>
+                    <p><strong>位置：</strong>飛機夜市旁</p>
+                    <p><strong>推薦：</strong>上海生煎包、小籠包、紅燒肉等</p>
+                    <p>非常道地，絕對回味無窮！</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">湖南菜</div>
+                    <p><strong>位置：</strong>飛機夜市後面</p>
+                    <p><strong>特色：</strong>稍微改良過沒那麼辣，但口味還是十足</p>
+                    <p>每個菜都非常下飯，吃完再逛六巷絕對好選擇！</p>
+                </div>
+            </div>
+            
+            <button class="collapsible">🍖 西餐 & 德國料理</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">HOPS BREWHOUSE PATTAYA</div>
+                    <p>德國豬腳、香腸、啤酒，現場有時候也會有現場演奏。美人人特非常多。</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">Beefeater Steak House and Pub</div>
+                    <p>牛排西餐愛好者必訪！每天滿滿人潮，一定要提前訂位或提前前往。</p>
+                </div>
+            </div>
+            
+            <button class="collapsible">🍗 特色小吃</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">肥仔炸雞</div>
+                    <p class="price">💰 20 泰銖</p>
+                    <p><strong>🏆 全芭堤雅最好吃的炸雞，沒有之一！</strong></p>
+                    <p>20泰銖就可以吃到鮮嫩多汁的酥脆大雞腿，全泰國最有性價比的炸雞！</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">MOOKATA 泰式燒烤</div>
+                    <p class="price">💰 169 泰銖/人</p>
+                    <p><strong>位置：</strong>釣蝦場旁邊</p>
+                    <p>泰妹最愛的 MOOKATA，便宜到不行！</p>
+                </div>
+            </div>
+            
+            <button class="collapsible">🌃 宵夜場</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">FRIENDLY</div>
+                    <p>夜場妹最愛的宵夜場，經濟實惠。</p>
+                    <div class="tip">
+                        💡 <strong>打野技巧：</strong>如果一整個晚上都沒有找到妹子，不妨來這邊吃個飯，常常就會遇到些空軍的妹子。大膽上前併個桌，說不定今晚的夥伴就找到了！
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 約會地點 -->
+        <section id="date">
+            <h2>☕ 約會地點 <span class="level-badge level-safe">🟢 一般</span></h2>
+            
+            <div class="venue">
+                <div class="venue-name">🐱 Cat Sky Bar Café（貓咖）</div>
+                <p class="price">💰 工作日 199฿ / 雙休日 250฿（含貓食 + 飲料）</p>
+                <p>店內環境乾淨無異味，有恐怖密室，頂樓可看海灘。<strong>貓奴聖地，增進感情好選擇！</strong></p>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">🐶 Dog Club Pattaya（狗咖）</div>
+                <p class="price">💰 300฿/人（含狗食 + 飲料）</p>
+                <p>店內環境乾淨整潔，有大型犬但很溫柔，提供拍立得合影服務。汪星人聖地！</p>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">🎡 The View Pattaya（摩天輪）</div>
+                <p class="price">💰 外國人 480฿ / 泰國人 280฿</p>
+                <p><strong>位置：</strong>六巷旁邊飛機夜市</p>
+                <p>芭堤雅最新地標！轎廂內有空調，白天看海景晚上浪漫氛圍。持泰國駕照享泰國人價格！</p>
+            </div>
+            
+            <button class="collapsible">🌅 網紅咖啡廳（海景 + 日落）</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">The Sky Gallery</div>
+                    <p>主要泰餐，也有西餐海鮮，可看日落。<strong>建議下午 5 點前往，最好提前預約！</strong></p>
+                </div>
+                <div class="venue">
+                    <div class="venue-name">3 Mermaids</div>
+                    <p>主要泰餐，也有西餐海鮮，海邊燭光晚餐。最好提前預約避免等位。</p>
+                </div>
+                <div class="venue">
+                    <div class="venue-name">The Oxygen Beachfront Oasis</div>
+                    <p>主要泰餐，也有西餐海鮮，氛圍好。最好提前預約。</p>
+                </div>
+                <div class="venue">
+                    <div class="venue-name">Hilton Pattaya 16樓咖啡廳</div>
+                    <p>位於芭堤雅海灘路中心點，俯瞰大海，室內有冷氣室外適合拍照。</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 啤酒吧 -->
+        <section id="beer">
+            <h2>🍺 啤酒吧 <span class="level-badge level-medium">🟡 進階</span></h2>
+            
+            <button class="collapsible">🏆 Pattaya Soi 6（六巷 - 新手村）</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">Soi 6 六巷</div>
+                    <p class="price">
+                        💰 Ladydrink：低成本試試聊<br>
+                        💰 Barfine：22:00前 3000฿ / 22:00後 1500฿ / 00:00後 1000฿<br>
+                        💰 妹子上樓：2000฿ 左右<br>
+                        💰 LT：3000-5000฿
+                    </p>
+                    <p><strong>特色：</strong>適合所有人群的新手村，老司機也可以玩得非常開心。</p>
+                    <div class="tip">
+                        💡 <strong>玩法技巧：</strong>
+                        <ul>
+                            <li>不要害羞，仔細看，多刷店！</li>
+                            <li>看到喜歡的妹子就抓緊拿下，猶豫一圈回來可能人就不見了</li>
+                            <li>一杯 Ladydrink 低成本試試聊</li>
+                            <li>儘量挑選對自己熱情的妹子</li>
+                            <li>如果妹子不停催酒，除非你實在喜歡，不然就可以買單走人了</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="collapsible">📍 Soi Buakhao 博考巷</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">Tree Town</div>
+                    <p class="price">💰 比 6 巷便宜</p>
+                    <p><strong>特色：</strong>妹子熱情度拉滿，鬆感滿滿！</p>
+                    <p class="warning-text">⚠️ 走路輕注意保護好自己的身體哦</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">MYTH NIGHT BAR BEER TOWN</div>
+                    <p class="price">💰 Barfine 和妹子價格都比 6 巷低</p>
+                    <p>疫情後新開，可以邊喝啤酒邊打撞球。6 巷有些妹子也會轉戰到這邊。</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">LK</div>
+                    <p class="price">💰 Ladydrink 價格相對便宜 / Barfine 800 左右 / LT 2000-3000฿</p>
+                    <p>相對步行街狗吧顏值略差，但體驗可行，沒有頻繁催酒。</p>
+                    <div class="tip">💡 二樓快速解決是個不錯的選擇哦！</div>
+                </div>
+            </div>
+            
+            <button class="collapsible">🌙 博考口語一條街</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">博考口語店</div>
+                    <p class="price">
+                        💰 LD 150฿<br>
+                        💰 口語 500฿<br>
+                        💰 圓滿 1000฿
+                    </p>
+                    <p>經濟實惠，白天打發時間的好去處。</p>
+                    <div class="tip">
+                        💡 Google 搜尋可找到位置，旁邊一圈都是同類型店，可以自己去體驗一番。
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- GoGo Bar -->
+        <section id="gogo">
+            <h2>💃 GoGo Bar（步行街）<span class="level-badge level-adult">🔴 限制級</span></h2>
+            
+            <div class="warning">
+                <strong>⚠️ 注意事項：</strong>
+                <ul>
+                    <li>服務員和媽媽桑會索要小費，要學會說不</li>
+                    <li>不要被妹子忽悠買很多酒，除非你覺得值得</li>
+                    <li><strong class="warning-text">要帶走，一定要完事以後再給妹子錢，不要提前給，不然大概率機車</strong></li>
+                    <li>記得問清楚妹子可以陪你到幾點</li>
+                </ul>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">PALACE</div>
+                <p class="price">
+                    💰 LT：基本 7000฿ 左右<br>
+                    💰 Barfine：價格混亂（有些店要求先買 10 杯 tequila）
+                </p>
+                <p><strong>位置：</strong>步行街 Walking Street</p>
+                <p>步行街老牌狗吧之一，素質不錯，是步行街最大的 GoGo 吧。</p>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">XS</div>
+                <p class="price">💰 LT：基本 7000฿ 左右 / Barfine：價格混亂</p>
+                <p>步行街老牌狗吧，素質不錯。</p>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">大風車（WINDMILL CLUB）</div>
+                <p class="price">💰 LT：基本 7000฿ 左右 / Barfine：價格混亂</p>
+                <p>步行街老牌狗吧，素質不錯，是步行街知名度最高的狗吧之一。</p>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">巴卡拉</div>
+                <p class="price">💰 LT：基本 7000฿ 左右 / Barfine：價格混亂</p>
+                <p>步行街老牌狗吧，素質不錯。</p>
+            </div>
+            
+            <button class="collapsible">🇷🇺 俄羅斯吧</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">.MOULIN ROUGE CLUB（紅磨坊）</div>
+                    <p><strong>位置：</strong>步行街</p>
+                    <p>俄羅斯妹 GoGo 吧，妹子身材高挑，金髮碧眼。</p>
+                    <div class="warning">
+                        <strong class="warning-text">⚠️ 俄羅斯吧比較不推薦，如果一定想進去看看，請千萬注意別被坑！</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 夜店 -->
+        <section id="club">
+            <h2>🎉 夜店 <span class="level-badge level-medium">🟡 進階</span></h2>
+            
+            <div class="venue">
+                <div class="venue-name">🔥 Panda（最推薦）</div>
+                <p class="price">
+                    💰 散台：無低消<br>
+                    💰 卡座：3000-8000฿<br>
+                    💰 PR 妹 LD：220฿/杯（可陪玩 20 分鐘）<br>
+                    💰 買 6 杯：基本一直陪你
+                </p>
+                <p><strong>營業時間：</strong>23:00 前到店</p>
+                <p><strong>特色：</strong>人氣很旺，妹子大多是東亞人喜歡的風格。</p>
+                <div class="tip">
+                    💡 <strong>技巧：</strong>
+                    <ul>
+                        <li>最好提前一天預訂卡座</li>
+                        <li>該給的錢還是要給（不要太執著於白嫖）</li>
+                        <li>鍛煉社交能力，膽子大點，多去撩妹</li>
+                        <li>PR 妹需要買 LD，220 一杯，基本可以陪你玩 20 分鐘</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">MYST</div>
+                <p><strong>營業：</strong>到早上 8:00</p>
+                <p>音樂、妹子素質尚可，基本不會讓你空手而歸。</p>
+                <p class="warning-text">⚠️ 裡面會有美人人和三哥</p>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">Insomnia</div>
+                <p>夜店環境、音樂、妹子素質尚可。</p>
+                <p class="warning-text">⚠️ 裡面會有美人人和三哥</p>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">Republic</div>
+                <p>夜店環境、音樂、妹子素質尚可。</p>
+                <p class="warning-text">⚠️ 裡面會有美人人和三哥</p>
+            </div>
+            
+            <button class="collapsible">💰 高端夜店</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">World House</div>
+                    <p class="price">💰 價格相對 Panda 貴一些，需訂位</p>
+                    <p>俗稱 Panda2，但定位完全不同。基本是 PR 店，場地裝修、音響、大螢幕都是頂級配置。</p>
+                    <p>適合想要震撼氛圍和高顏值妹子，但不在意預算的小夥伴。</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">SPACE PATTAYA</div>
+                    <p class="price">💰 消費略高，需訂位</p>
+                    <p><strong>結構：</strong>一樓夜店 / 二樓 KTV</p>
+                    <p>最新開業（前身 YING CLUB），PR 素質挺高，有很多 90 分妹子。</p>
+                    <p>適合盡情享受音樂和美女、消費能力較強的小夥伴。</p>
+                </div>
+            </div>
+            
+            <button class="collapsible">🎵 土嗨吧（泰式音樂）</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">168（人氣最高）</div>
+                    <p class="price">💰 點泰國威特卡，價格實惠</p>
+                    <p><strong>位置：</strong>對面 The Grass 飯店</p>
+                    <p><strong>特色：</strong>目前人氣最高，純正泰式音樂，風土人情。</p>
+                    <p class="warning-text">⚠️ 人氣高，來做生意的妹子也越來越多，白嫖概率降低</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">Area39</div>
+                    <p class="price">💰 點泰國威特卡，價格實惠</p>
+                    <p>純粹來玩的當地人比較多。</p>
+                    <p>打野難度相對 168 要高一點，但更純粹。</p>
+                </div>
+                
+                <div class="tip">
+                    💡 <strong>土嗨吧玩法：</strong>泰妹都喜歡喝泰國本土威特卡，價格實惠但比較沖，可能需要適應一下。要感受純正的泰式音樂、風土人情，土嗨吧是首選！
+                </div>
+            </div>
+            
+            <button class="collapsible">💸 好萊塢（人肉計算器）</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">Hollywood Pattaya</div>
+                    <p class="price">💰 價位 5000฿ 起，上不封頂，很難還價到 5000 以下</p>
+                    <p><strong>特色：</strong>人稱「人肉計算器夜店」，簡單直接，不多囉嗦。</p>
+                    <p>全場都是自由職業者，白嫖概率非常低。妹子會按計算器給你看價格。</p>
+                    <div class="tip">
+                        💡 <strong>技巧：</strong>
+                        <ul>
+                            <li>不建議在好萊塢點太好的酒，點瓶紅方就行了</li>
+                            <li>遇到喜歡的直接上，翻譯軟體就行，妹子會按計算器給你看</li>
+                            <li>推薦給不善言辭的新手去逛逛</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 按摩店 -->
+        <section id="massage">
+            <h2>💆 按摩店 <span class="level-badge level-adult">🔴 限制級</span></h2>
+            
+            <button class="collapsible">🌙 日按店（全套打炮）</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">SECRET GARDEN SPA</div>
+                    <p><strong>位置：</strong>Soi Buakhao，位於 BBC 對面</p>
+                    <p>日按店（全套），環境不錯。</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">PARADISE HEALTH MASSAGE</div>
+                    <p>日按店，位於 NURU 對面。</p>
+                </div>
+                
+                <div class="tip">
+                    💡 <strong>日按店說明：</strong>提供全套服務，環境較隱密，適合想要隱私的客人。
+                </div>
+            </div>
+            
+            <button class="collapsible">💆 色情按摩店（按摩 / 半套 / 全套）</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">PATTAYA BANANA MASSAGE</div>
+                    <p><strong>🏆 芭提雅最有名的色情按摩店</strong></p>
+                    <p>位於步行街附近，妹子素質不錯。</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">MASSAGE AND SPA</div>
+                    <p>價格便宜但設施一般。</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">DRAGON MASSAGE</div>
+                    <p>設施不錯，妹子年輕漂亮。</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">PLAYTIME MASSAGE</div>
+                    <p>設施不錯。</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">UPTO YOU MASSAGE</div>
+                    <p><strong>🏆 芭提雅最有名的色情按摩店之一</strong></p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">AM MASSAGE</div>
+                    <p><strong>位置：</strong>博考巷（Soi Buakhao）</p>
+                    <p>價格便宜但妹子顏值一般。</p>
+                </div>
+                
+                <div class="tip">
+                    💡 <strong>服務項目：</strong>
+                    <ul>
+                        <li>按摩：正常按摩服務</li>
+                        <li>半套：按摩 + 手工服務</li>
+                        <li>全套：完整性服務</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 泰浴 -->
+        <section id="bath">
+            <h2>🛁 泰浴（大浴室按摩加全套）<span class="level-badge level-adult">🔴 限制級</span></h2>
+            
+            <div class="venue">
+                <div class="venue-name">HONEY BODY MASSAGE</div>
+                <p class="price">💰 約 3000-4000฿</p>
+                <p>大浴室按摩加全套，現場有時候也會有現場演奏。</p>
+                <p><strong>特色：</strong>正宗泰浴體驗，大浴缸、泡泡浴、全套服務。</p>
+            </div>
+            
+            <div class="venue">
+                <div class="venue-name">中心浴室</div>
+                <p class="price">💰 約 2500-3500฿</p>
+                <p>大浴室按摩加全套，經濟實惠。</p>
+            </div>
+            
+            <div class="tip">
+                💡 <strong>泰浴說明：</strong>
+                <ul>
+                    <li>先選妹子（通常坐在玻璃後面，有編號）</li>
+                    <li>付款給櫃檯（含房費 + 服務費）</li>
+                    <li>進入大浴室（泡泡浴、按摩）</li>
+                    <li>最後到床上（全套服務）</li>
+                    <li>整個流程約 90-120 分鐘</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- KTV -->
+        <section id="ktv">
+            <h2>🎤 KTV 夜總會 <span class="level-badge level-adult">🔴 限制級</span></h2>
+            
+            <div class="venue">
+                <div class="venue-name">PEGASUS（韓式 KTV）</div>
+                <p class="price">
+                    💰 包房費：7000฿（含一瓶韓國威特卡 + 5 瓶啤酒，無時間限制）<br>
+                    💰 妹子陪酒：1000฿ / 2小時<br>
+                    💰 出場：5000-7000฿（根據妹子而定）<br>
+                    💰 無額外 Barfine
+                </p>
+                <p><strong>營業時間：</strong>17:00 - 00:00（結束很早！）</p>
+                <p><strong>特色：</strong>韓式 KTV，妹子 18:30 就可以跟你出去吃飯，一直陪到第二天早上。</p>
+                <div class="warning">
+                    <strong class="warning-text">⚠️ 必須早點來，晚來只有歪瓜裂棗！</strong>所有妹子都坐在大廳，可以先看一下有沒有符合自己審美的妹子。
+                </div>
+            </div>
+            
+            <button class="collapsible">其他 KTV</button>
+            <div class="content">
+                <div class="venue">
+                    <div class="venue-name">NEW SEASON（新春）</div>
+                    <p>KTV 夜總會，有包廂式服務。</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">SPACE CLUB PATTAYA</div>
+                    <p>一樓夜店，二樓 KTV 包房。</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">PLANET CLUB PATTAYA</div>
+                    <p>有舞池，也有 KTV 包廂。</p>
+                </div>
+                
+                <div class="venue">
+                    <div class="venue-name">KTV LILI MARLEEN</div>
+                    <p>芭提雅最有名的泰式 KTV 之一。</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 打野技巧 -->
+        <section id="pickup">
+            <h2>🌹 打野技巧（泡良家妹子）<span class="level-badge level-adult">🔴 限制級</span></h2>
+            
+            <div class="warning">
+                <strong>⚠️ 聲明：</strong>本節內容僅供參考，請尊重他人意願，不要強迫或騷擾。「打野」是指追求非職業賣淫的普通女生，雙方自願交往，不涉及金錢交易。
+            </div>
+            
+            <button class="collapsible">第一步：位置選擇</button>
+            <div class="content">
+                <div class="tip">
+                    💡 <strong>關鍵：</strong>選一個周圍漂亮妹子多的桌子，這樣喝著喝著很容易喝到一起。
+                    <br><br>
+                    如果你周圍全是一群男的，就只能拿著酒杯滿場找目標了，對於有些臉皮薄的朋友來說會有點尷尬。
+                    <br><br>
+                    <strong>所以位置的選擇很重要！</strong>
+                </div>
+            </div>
+            
+            <button class="collapsible">第二步：尋找目標</button>
+            <div class="content">
+                <div class="tip">
+                    💡 <strong>觀察重點：</strong>
+                    <ul>
+                        <li>她是不是一個人來的？</li>
+                        <li>是和男性朋友還是女性朋友一起來的？</li>
+                        <li>看桌子上有幾個酒杯</li>
+                        <li><strong>最重要：她是不是 working girl？</strong></li>
+                    </ul>
+                </div>
+                
+                <button class="collapsible" style="margin-top: 15px;">🔍 如何分辨 Working Girl</button>
+                <div class="content">
+                    <ul>
+                        <li>看她身邊的朋友：職業賣的不太可能找醜女做隊友</li>
+                        <li>看氣質、看神態（憑感覺）</li>
+                        <li>有些職業賣的會主動拋媚眼</li>
+                        <li>如果一個人坐在桌子上東張西望，什麼也不幹 → 90% 是職業賣的</li>
+                        <li><strong>最簡單：直接問 "Are you working girl?"</strong></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <button class="collapsible">第三步：主動出擊</button>
+            <div class="content">
+                <div class="tip">
+                    💡 <strong>口訣：</strong>鎖定目標後，不要猶豫！<strong>猶豫就會敗北！</strong>
+                    <br><br>
+                    <strong>開場白範例：</strong>
+                    <br>"I think you are very beautiful. Can I make a friend?"
+                    <br><br>
+                    <strong>碰杯後立即問問題避免冷場：</strong>
+                    <ul>
+                        <li>"What's your name?"（你叫什麼名字？）</li>
+                        <li>"How old are you?"（你幾歲？）</li>
+                        <li>"Are you here alone?"（你是一個人來的嗎？）</li>
+                    </ul>
+                    <br>
+                    <strong class="warning-text">⚠️ 一定要加聯繫方式！</strong>有的話不方便當面說，可以在社交軟體上面聊。
+                </div>
+            </div>
+            
+            <button class="collapsible">第四步：死纏爛打</button>
+            <div class="content">
+                <div class="tip">
+                    💡 <strong>策略：</strong>如果她沒有表現出不耐煩，就可以死皮賴臉纏著她了！
+                    <br><br>
+                    <strong>遊戲技巧：</strong>
+                    <ul>
+                        <li>跟她玩喝酒遊戲，激起勝負欲</li>
+                        <li>展現你「海量」的一面</li>
+                        <li>發一些小費做獎勵機制（例如：她輸了親你一下，她贏了給她 100 泰銖）</li>
+                        <li>遊戲包括：抓手指、猜拳、骰子、手機遊戲賽跑等</li>
+                    </ul>
+                    <br>
+                    <strong>肢體接觸：</strong>
+                    <ul>
+                        <li>玩抓手指遊戲可以吃妹子豆腐，親親搂搂抱抱都不是問題</li>
+                        <li>多一些肢體接觸，表現出男人的風度</li>
+                        <li>不要猥瑣，不要扭扭捏捏</li>
+                        <li>如果肢體接觸妹子沒有明顯拒絕 → <strong>基本上就穩了！</strong></li>
+                    </ul>
+                    <br>
+                    <strong class="highlight">俗話說：「好女怕郎纏」</strong>
+                </div>
+            </div>
+            
+            <button class="collapsible">第五步：約去吃飯</button>
+            <div class="content">
+                <div class="tip">
+                    💡 <strong>時機：</strong>喝酒快結束的時候提前約妹子一起去吃飯。
+                    <br><br>
+                    <strong>餐廳推薦：</strong>
+                    <ul>
+                        <li>曼谷 → 海底撈 或 RCA 酒吧街門口的飯店</li>
+                        <li>芭堤雅 → 上海菜、湖南菜、飛機夜市</li>
+                    </ul>
+                    <br>
+                    <strong class="warning-text">⚠️ 吃飯期間不要問她跟不跟你回酒店！</strong>
+                    <br>
+                    先吃，吃開心了一切都是水到渠成的，不要表現得太刻意。
+                    <br><br>
+                    她都來酒吧了，她怎麼會不知道你心裡想幹什麼！你不說她也知道！
+                    <br><br>
+                    吃飯直接打個車，邀請她一起回去，女孩一般比較羞澀，所以你男人必須主動！
+                    <br>
+                    <strong>抱著她基本上妹子半推半就的就跟你上車了。</strong>
+                    <br><br>
+                    其實她心裡也想跟你回去，泰國一夜情簡直太正常了。
+                    <br><br>
+                    如果第一天她可能因為某些原因不跟你回去，你也不要強求她，給她留個好印象，後續繼續約出來，肯定能拿下！
+                </div>
+            </div>
+            
+            <button class="collapsible">⚠️ 注意事項</button>
+            <div class="content">
+                <ul>
+                    <li><strong>選妹子段位：</strong>找跟自己匹配的段位，可以嘗試比自己高一個段位但不要太誇張。不要癩蛤蟆想吃天鵝肉，也不要找太抽象的，不要飢不擇食。</li>
+                    <li><strong>這種不叫白嫖：</strong>首先妹子不是 working girl，第二雙方都是自願的，所以談不上白嫖。真正的白嫖是那種跟職業女談好了價格，最後卻不給錢或者只給一點點的。</li>
+                    <li><strong>嫌麻煩？</strong>那就直接找 working girl 就行了。以上只針對想在泰國留下一段美好回憶、想在泰國嘗試打野的朋友。</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- 術語 -->
+        <section id="terms">
+            <h2>📖 術語大全 <span class="level-badge level-medium">🟡 進階</span></h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>術語</th>
+                        <th>英文</th>
+                        <th>說明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Barfine</strong></td>
+                        <td>Bar Fine</td>
+                        <td>帶妹子離開酒吧需要付給酒吧的費用（補償店家損失）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ladydrink (LD)</strong></td>
+                        <td>Lady Drink</td>
+                        <td>請妹子喝一杯酒的費用（妹子會分成）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LT</strong></td>
+                        <td>Long Time</td>
+                        <td>過夜、長時間服務（通常到隔天早上）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ST</strong></td>
+                        <td>Short Time</td>
+                        <td>短時間服務（通常 1-2 小時）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Working Girl</strong></td>
+                        <td>-</td>
+                        <td>職業賣的妹子（性工作者）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>打野</strong></td>
+                        <td>-</td>
+                        <td>泡良家妹子（非職業的普通女生）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>白嫖</strong></td>
+                        <td>-</td>
+                        <td>免費獲得服務（註：泡良家不算白嫖，因為雙方自願）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GoGo Bar</strong></td>
+                        <td>-</td>
+                        <td>脫衣舞酒吧（妹子在台上跳舞，可以請下來陪酒並帶走）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PR 妹</strong></td>
+                        <td>Public Relations</td>
+                        <td>夜店的公關妹子（陪酒、陪玩，可出場）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>泰浴</strong></td>
+                        <td>-</td>
+                        <td>大浴室 + 按摩 + 全套服務的綜合體驗</td>
+                    </tr>
+                    <tr>
+                        <td><strong>日按</strong></td>
+                        <td>-</td>
+                        <td>日式按摩店（提供全套服務）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>半套</strong></td>
+                        <td>-</td>
+                        <td>按摩 + 手工服務（不包含性交）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>全套</strong></td>
+                        <td>-</td>
+                        <td>完整性服務（包含性交）</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="tip">
+                💡 <strong>實用對話：</strong>
+                <ul>
+                    <li>"How much?" → 多少錢？</li>
+                    <li>"Long time or short time?" → 過夜還是短時？</li>
+                    <li>"Can you stay until morning?" → 你能待到早上嗎？</li>
+                    <li>"Are you working girl?" → 你是做這個的嗎？</li>
+                    <li>"No barfine?" → 不用付 barfine 嗎？</li>
+                </ul>
+            </div>
+        </section>
+        
+        <footer>
+            <p>🌙 芭堤雅完全攻略 v2024</p>
+            <p style="margin-top: 10px;">本攻略僅供參考，價格可能隨時變動，實際以店家為準。</p>
+            <p>請遵守當地法律，尊重他人，注意安全。</p>
+            <p style="margin-top: 20px; font-size: 0.9em;">
+                資料來源：J SPA 芭堤雅攻略 + 網路整理<br>
+                最後更新：2024-08
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        // 摺疊功能
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+                content.classList.toggle("active");
+            });
+        }
+        
+        // 搜尋功能
+        function searchContent() {
+            var input = document.getElementById("searchInput").value.toLowerCase();
+            var sections = document.getElementsByTagName("section");
+            
+            for (var i = 0; i < sections.length; i++) {
+                var content = sections[i].textContent || sections[i].innerText;
+                if (content.toLowerCase().indexOf(input) > -1) {
+                    sections[i].style.display = "";
+                } else {
+                    sections[i].style.display = "none";
+                }
+            }
+        }
+        
+        // 導航滾動
+        function scrollToSection(id) {
+            var element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+        
+        // 防止密碼保護（可選）
+        // function checkPassword() {
+        //     var password = prompt("請輸入密碼查看完整攻略：");
+        //     if (password !== "pattaya2024") {
+        //         alert("密碼錯誤！");
+        //         document.body.innerHTML = "<h1 style='color:white;text-align:center;margin-top:50px;'>密碼錯誤</h1>";
+        //     }
+        // }
+        // window.onload = checkPassword;
+    </script>
+</body>
+</html>
