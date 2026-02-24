@@ -247,44 +247,90 @@
         }
         
         @media (max-width: 768px) {
-            body { padding: 10px; }
-            h1 { font-size: 1.6em; }
-            h2 { font-size: 1.4em; }
-            .container { padding: 10px; }
-            section { padding: 12px; }
-            .venue { 
-                padding: 12px; 
-                margin: 10px 0;
+            body { 
+                padding: 8px; 
+                overflow-x: hidden;
             }
-            .venue-name { font-size: 1.1em; }
-            .tip { 
+            h1 { 
+                font-size: 1.6em; 
+                word-wrap: break-word;
+            }
+            h2 { 
+                font-size: 1.4em;
+                word-wrap: break-word;
+            }
+            .container { 
+                padding: 8px;
+                overflow-x: hidden;
+            }
+            section { 
+                padding: 10px;
+                margin: 15px 0;
+            }
+            .venue { 
                 padding: 10px; 
                 margin: 10px 0;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+            .venue-name { 
+                font-size: 1.05em;
+                line-height: 1.4;
+                margin-bottom: 8px;
+            }
+            .tip { 
+                padding: 8px; 
+                margin: 8px 0;
+                word-wrap: break-word;
             }
             .warning { 
-                padding: 10px;
-                margin: 10px 0;
+                padding: 8px;
+                margin: 8px 0;
+                word-wrap: break-word;
             }
             .collapsible {
-                padding: 12px;
-                font-size: 1em;
+                padding: 10px;
+                font-size: 0.95em;
+                word-wrap: break-word;
             }
             .content.active {
-                padding: 12px;
+                padding: 10px;
             }
             ul, ol {
-                margin-left: 15px;
+                margin-left: 18px;
+                padding-right: 5px;
             }
             li {
                 margin: 5px 0;
                 word-wrap: break-word;
+                overflow-wrap: break-word;
+                line-height: 1.5;
+            }
+            p {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                margin: 5px 0;
             }
             .price {
-                font-size: 0.95em;
+                font-size: 0.9em;
+                word-wrap: break-word;
+            }
+            .warning-text {
+                display: block;
+                margin: 8px 0;
+                padding: 5px 0;
+                word-wrap: break-word;
             }
             nav button {
-                padding: 8px 15px;
+                padding: 8px 12px;
                 font-size: 0.85em;
+            }
+            strong {
+                word-wrap: break-word;
+            }
+            .highlight {
+                display: inline;
+                word-wrap: break-word;
             }
         }
         
